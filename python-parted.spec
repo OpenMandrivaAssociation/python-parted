@@ -4,14 +4,12 @@
 Summary: Python module for GNU parted
 Name:    python-parted
 Version: 2.5
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPLv2+
 Group:   System/Configuration/Hardware
 URL:     http://fedorahosted.org/pyparted
 
 Source0: http://fedorahosted.org/releases/p/y/%{fname}/%{fname}-%{version}.tar.gz
-# (tv) fix build:
-Patch0: pyparted-build-fix.diff
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: python-devel
@@ -27,7 +25,6 @@ partition tables.
 
 %prep
 %setup -q -n %fname-%version
-%patch0 -p0
 
 %build
 %configure2_5x
