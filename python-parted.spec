@@ -2,15 +2,14 @@
 
 Summary: Python module for GNU parted
 Name:    python-parted
-Version: 3.0
-Release: %mkrel 4
+Version: 3.6
+Release: %mkrel 1
 License: GPLv2+
 Group:   System/Configuration/Hardware
 URL:     http://fedorahosted.org/pyparted
 
 Source0: http://fedorahosted.org/releases/p/y/%{fname}/%{fname}-%{version}.tar.gz
 Patch0: pyparted-3.0-link.patch
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: python-devel
 BuildRequires: parted-devel >= 1.9.0-20
 BuildRequires: pkgconfig
