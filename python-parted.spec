@@ -1,4 +1,3 @@
-%{!?python_sitearch: %define python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 %define fname pyparted
 
 Summary: Python module for GNU parted
@@ -10,7 +9,7 @@ Group:   System/Configuration/Hardware
 URL:     http://fedorahosted.org/pyparted
 
 Source0: http://fedorahosted.org/releases/p/y/%{fname}/%{fname}-%{version}.tar.gz
-
+Patch0: pyparted-3.0-link.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: python-devel
 BuildRequires: parted-devel >= 1.9.0-20
@@ -25,6 +24,7 @@ partition tables.
 
 %prep
 %setup -q -n %fname-%version
+%patch0 -p0
 
 %build
 %configure2_5x
