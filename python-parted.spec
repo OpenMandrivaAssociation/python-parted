@@ -2,14 +2,12 @@
 
 Summary: Python module for GNU parted
 Name:    python-parted
-Version: 3.6
+Version: 3.8
 Release: %mkrel 1
 License: GPLv2+
 Group:   System/Configuration/Hardware
 URL:     http://fedorahosted.org/pyparted
-
 Source0: http://fedorahosted.org/releases/p/y/%{fname}/%{fname}-%{version}.tar.gz
-Patch0: pyparted-3.0-link.patch
 BuildRequires: python-devel
 BuildRequires: parted-devel >= 1.9.0-20
 BuildRequires: pkgconfig
@@ -23,16 +21,13 @@ partition tables.
 
 %prep
 %setup -q -n %fname-%version
-%patch0 -p0
 
 %build
-%configure2_5x
-%make
+python setup.py build
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std
-rm -rf %{buildroot}%{python_sitearch}/_pedmodule.la
+python setup.py install --root=%{buildroot}
 
 %clean
 %{__rm} -rf %{buildroot}
@@ -40,6 +35,4 @@ rm -rf %{buildroot}%{python_sitearch}/_pedmodule.la
 %files
 %defattr(-,root,root,-)
 %doc AUTHORS BUGS COPYING ChangeLog NEWS README TODO
-%{python_sitearch}/_pedmodule.so
-%{python_sitearch}/parted
-
+%{python_sitearch}/*
