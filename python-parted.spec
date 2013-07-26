@@ -2,12 +2,12 @@
 
 Summary: Python module for GNU parted
 Name:    python-parted
-Version: 3.8
-Release: 2
+Version: 3.10
+Release: 1
 License: GPLv2+
 Group:   System/Configuration/Hardware
 URL:     http://fedorahosted.org/pyparted
-Source0: http://fedorahosted.org/releases/p/y/%{fname}/%{fname}-%{version}.tar.gz
+Source0: https://fedorahosted.org/releases/p/y/pyparted/pyparted-%{version}.tar.gz
 BuildRequires: python-devel
 BuildRequires: parted-devel >= 1.9.0-20
 BuildRequires: python-decorator
@@ -73,3 +73,4 @@ python setup.py install --root=%{buildroot}
 * Sun Dec 20 2009 Thierry Vignaud <tvignaud@mandriva.com> 2.5-1mdv2010.1
 - initial release based on fedora package
 - patch 0: build fixes
+

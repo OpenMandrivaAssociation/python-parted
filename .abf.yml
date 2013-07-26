@@ -1,2 +1,4 @@
+removed_sources:
+  pyparted-3.8.tar.gz: 4d11482a4de7ec6962dfbb36a67965bd35b0daf6
 sources:
-  "pyparted-3.8.tar.gz": 4d11482a4de7ec6962dfbb36a67965bd35b0daf6
+  pyparted-3.10.tar.gz: 6189818baa0b1e9edf199eeced5242891534a700
