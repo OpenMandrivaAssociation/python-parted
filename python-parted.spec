@@ -3,7 +3,7 @@
 Summary:	Python module for GNU parted
 Name:		python-parted
 Version:	3.10
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://fedorahosted.org/pyparted
