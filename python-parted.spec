@@ -2,15 +2,15 @@
 
 Summary:	Python module for GNU parted
 Name:		python-parted
-Version:	3.10
-Release:	8
+Version:	3.10.0
+Release:	10
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://fedorahosted.org/pyparted
 Source0:	https://fedorahosted.org/releases/p/y/pyparted/pyparted-%{version}.tar.gz
 BuildRequires:	python-decorator
 BuildRequires:	pkgconfig(libparted)
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 Requires:	python-decorator
 # Compatibility with packages <= 2013.0-beta 1
 Obsoletes:	pyparted < %{EVRD}
