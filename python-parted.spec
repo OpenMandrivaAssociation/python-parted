@@ -25,7 +25,7 @@ partition tables.
 %package -n python2-parted
 Summary:	Python 2.x module for GNU parted
 Group:		System/Configuration/Hardware
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python2)
 
 %description -n python2-parted
 Python 2.x module for GNU parted
