@@ -3,12 +3,12 @@
 
 Summary:	Python module for GNU parted
 Name:		python-parted
-Version:	3.10.0
-Release:	14
+Version:	3.11.1
+Release:	1
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://fedorahosted.org/pyparted
-Source0:	https://fedorahosted.org/releases/p/y/pyparted/pyparted-%{version}.tar.gz
+Source0:	https://github.com/dcantrell/pyparted/archive/v%{version}.tar.gz
 BuildRequires:	python-decorator
 BuildRequires:	pkgconfig(libparted)
 BuildRequires:	pkgconfig(python3)
@@ -55,7 +55,7 @@ python2 setup.py install --root=%{buildroot}
 %endif
 
 %files
-%doc AUTHORS BUGS COPYING ChangeLog NEWS README TODO
+%doc AUTHORS COPYING NEWS README TODO
 %{python_sitearch}/*
 
 %if %{with python2}
