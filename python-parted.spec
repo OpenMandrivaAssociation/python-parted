@@ -3,7 +3,7 @@
 
 Summary:	Python module for GNU parted
 Name:		python-parted
-Version:	3.11.3
+Version:	3.11.4
 Release:	1
 License:	GPLv2+
 Group:		System/Configuration/Hardware
