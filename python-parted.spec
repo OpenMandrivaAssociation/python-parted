@@ -1,3 +1,4 @@
+%global debug_package %{nil}
 %define fname pyparted
 %bcond_with python2
 
