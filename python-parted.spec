@@ -1,5 +1,5 @@
 %define fname pyparted
-%bcond_without python2
+%bcond_with python2
 
 Summary:	Python module for GNU parted
 Name:		python-parted
