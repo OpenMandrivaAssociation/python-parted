@@ -13,6 +13,7 @@ Source0:	https://github.com/dcantrell/pyparted/archive/v%{version}/%{fname}-%{ve
 BuildRequires:	python-decorator
 BuildRequires:	pkgconfig(libparted)
 BuildRequires:	pkgconfig(python3)
+BuildRequires:  python3dist(setuptools)
 Requires:	python-decorator
 # Compatibility with packages <= 2013.0-beta 1
 Obsoletes:	pyparted < %{EVRD}
@@ -57,7 +58,7 @@ python2 setup.py install --root=%{buildroot}
 
 %files
 %doc AUTHORS COPYING NEWS README TODO
-%{python_sitearch}/*
+#{python_sitearch}/*
 
 %if %{with python2}
 %files -n python2-parted
