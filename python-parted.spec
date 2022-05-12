@@ -59,7 +59,7 @@ python2 setup.py install --root=%{buildroot}
 %files
 %doc AUTHORS COPYING NEWS README TODO
 #{python_sitearch}/*
-%optional %{python_sitearch}/_ped.cpython-311-x86_64-linux-gnu.so
+%{python_sitearch}/_ped.cpython-*-*-linux-gnu.so
 %{python_sitearch}/parted/
 %{python_sitearch}/pyparted-%{version}-py*.*.egg-info
 
