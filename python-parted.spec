@@ -8,7 +8,7 @@ Version:	3.12.0
 Release:	2
 License:	GPLv2+
 Group:		System/Configuration/Hardware
-Url:		http://fedorahosted.org/pyparted
+Url:		https://fedorahosted.org/pyparted
 Source0:	https://github.com/dcantrell/pyparted/archive/v%{version}/%{fname}-%{version}.tar.gz
 BuildRequires:	python-decorator
 BuildRequires:	pkgconfig(libparted)
